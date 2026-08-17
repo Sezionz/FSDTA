@@ -129,3 +129,4 @@ Desktop.ini
 # Exclude generated/processed files:
 # *.exported*
 # *analysis_output*
+clean_transactions.csv
