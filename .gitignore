@@ -23,6 +23,7 @@ env/
 .ipynb_checkpoints
 *.ipynb_checkpoints
 **/.swe-agent/
+EDA.ipynb
 
 # ============================================
 # Data Files (keep raw CSV, commit cleaned if desired)
