@@ -1,0 +1,130 @@
+# ============================================
+# .gitignore for FSDTA (Financial Spend Data Tracking App)
+# ============================================
+
+# ============================================
+# Python Byte-Compiled Files
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ============================================
+# Virtual Environment (DO NOT COMMIT VENV)
+# ============================================
+.venv/
+venv/
+ENV/
+env/
+
+# ============================================
+# Jupyter Notebook Outputs & Cache
+# ============================================
+.ipynb_checkpoints
+*.ipynb_checkpoints
+**/.swe-agent/
+
+# ============================================
+# Data Files (keep raw CSV, commit cleaned if desired)
+# ============================================
+ * .csv
+# *.csv
+# *data/*.json
+# *results/*.parquet
+
+:
+ Transaction Export 17-08-2026.csv  
+ clean_transactions.csv             
+
+# ============================================
+# Plots & Visualizations Folder
+# ============================================
+plots/*.png
+plots/*.jpg
+plots/*.svg
+**/outputs/*.png
+**/figures/*.png
+**/plots/*.png
+
+# But keep this folder tracked:
+# plots/ <- Commit the folder even if empty initially
+
+# ============================================
+# Large Data Files & Backups
+# ============================================
+*.parquet
+*.feather
+*.h5
+*.sqlite
+*.db
+*.sql
+
+# Backup files (if you create them)
+*.bak
+*.backup
+*.old
+
+# ============================================
+# IDE Specific Files
+# ============================================
+.vscode/settings.json
+.idea/
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+
+# ============================================
+# Python Install/Generated Files
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.pytype/
+.tox/
+.nox/
+venv/
+.eggs/
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ============================================
+# OS Generated Files (Windows specific)
+# ============================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.log
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+
+# ============================================
+# Temporary & Debug Files
+# ============================================
+*.tmp
+*.temp
+*.TEMP
+.pytest_cache/
+.cache/
+.tmp/
+
+# ============================================
+# Large CSV Data (OPTIONAL - uncomment if needed)
+# ============================================
+# .venv/
+# **/.venv*/
+# # Keep main data file committed:
+# Transaction Export 17-08-2026.csv
+# Exclude generated/processed files:
+# *.exported*
+# *analysis_output*
